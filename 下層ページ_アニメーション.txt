@@ -1,0 +1,103 @@
+【next.html】</article>の前に次のコードを挿入
+
+<section class="transition">
+    <h2>transitionの基礎</h2>
+    <p class="simple"><a href="#">シンプルなtransition</a></p>
+    <p class="option">transitionのオプション</p>
+</section>
+<section class="tab">
+    <h2>transtionの応用</h2>
+    <ul>
+        <li>
+            TAB1
+            <div>
+                TAB1のコンテンツ
+            </div>
+        </li>
+        <li>
+            TAB2
+            <div>
+                TAB2のコンテンツ
+            </div>
+        </li>
+        <li>
+            TAB3
+            <div>
+                TAB3のコンテンツ
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="keyframes">
+    <h2>@keyframes</h2>
+    <p class="fadein">表示時のフェードイン</p>
+    <p class="blink">点滅表示</p>
+    <p class="hoverb">ホバーで点滅、クリックで停止</p>
+</section>
+
+
+【next.cssに追記】この下からコピー
+
+/*--------------------
+transition
+--------------------*/
+section.transition p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* シンプルなtransition */
+p.simple a:hover {
+    
+}
+p.simple a {
+    
+}
+/* transitionのオプション */
+p.option {
+    line-height: 60px;
+}
+p.option:hover {
+    
+}
+
+/*--------------------
+タブ切り替え
+--------------------*/
+section.tab ul {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+section.tab li {
+    flex: 1;
+}
+section.tab div {
+    line-height: 100px;
+}
+/* チェックボックスでタブ切り替え */
+
+/*--------------------
+@keyframes
+--------------------*/
+section.keyframes p {
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 60px;
+}
+/* 表示時のフェードイン */
+p.fadein {
+    
+}
+/* 点滅表示 */
+p.blink {
+    
+}
+/* ホバーで点滅 */
+p.hoverb:hover {
+    
+}
+/* クリックで停止 */
+
+/*--------------------
+CSS変数
+--------------------*/
